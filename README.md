@@ -17,6 +17,12 @@ In addition, they store internally a `counter` and the outputs show a binary rep
 
 So each output changes twice as slow as the one before. For this, they are quite fine to create a clock or frequency divider.
 
+## On the shoulders of giants
+Doing a quick research, the usual suspects did what I plan before I started to think about this: hagiwo has buit a 6$ clock divider based on that very chip and benji did improve it, adding even an internal clock signal. Also Eddi Bergman has schematics online how to built such a clock divider. So I could simply copy what they did, not thinking about it and .. be happy... but, i want to understand how it works, so I redo their work and see what I will come up with. 
+
+First, I only whant to have one output and want it to be switchable to a divider factor from 1/2, 1/4, ... 1/256. I have no 8 step rotation switch, so I use a dip switch in stead. Also I am quite curious what will happen if i activate more than one of the outputs. 
+
+So my first schematics is very basic. 
 
 
 # References: 

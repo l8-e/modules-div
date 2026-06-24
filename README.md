@@ -3,7 +3,7 @@ A Eurorack Clock/Frequency Module - based on a TP4040BE
 
 I have some idea in mind, for which I need a clock divider. For sure, there is Doepfer's A-160 (https://doepfer.de/a160.htm) which would do the trick, but why not building something on my own? 
 
-I have a couple TP4040BE chips here. These are binary counters, so they have one `input and one 
+I have a couple TP4040BE chips here. These are binary counters, so they have one `input` and one 
 `reset-input` and a couple of outputs `q1`, `q2`, ...
 In addition, they store internally a `counter` and the outputs show a binary representation of that counter. Each time a signal on `input` is detected, the `counter`is incremented by one. This leads to the following output sequence (`q1`, `q2`, ...):
 
